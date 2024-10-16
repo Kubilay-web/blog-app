@@ -3,7 +3,7 @@
 import { assets, blog_data } from "@/Assets/assets";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/page";
 import Link from "next/link";
 import axios from "axios";
 

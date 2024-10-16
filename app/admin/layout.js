@@ -1,5 +1,5 @@
 import { assets } from "@/Assets/assets";
-import Sidebar from "@/components/AdminComponents/Sidebar";
+import Sidebar from "@/components/AdminComponents/Sidebar/page";
 import Image from "next/image";
 import React from "react";
 import { ToastContainer } from "react-toastify";

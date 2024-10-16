@@ -1,6 +1,6 @@
 import { blog_data } from "@/Assets/assets";
 import React, { useEffect, useState } from "react";
-import BlogItem from "./BlogItem";
+import BlogItem from "../BlogItem/page";
 import axios from "axios";
 
 const BlogList = () => {
