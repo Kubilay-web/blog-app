@@ -5,34 +5,41 @@ import Link from "next/link";
 
 const page = ({ title, description, category, image, id }) => {
   return (
-    <div className="max-w-[330px] sm:max-w-[300px] bg-white border border-black hover:shadow-[-7px_7px_0px_#000000]">
-      <Link href={`/blogs/${id}`}>
-        <Image
-          src={image}
-          alt=""
-          width={400}
-          height={400}
-          className="border-b border-black"
-        />
-      </Link>
-      <p className="ml-5 mt-5 px-1 inline-block bg-black text-white text-sm">
-        {category}
-      </p>
-      <div className="p-5">
-        <h5 className="mb-2 text-lg font-medium tracking-tight text-gray-900">
-          {title}
-        </h5>
-        <p className="mb-3 text-sm tracking-tight text-gray-700">
-          {description}
-        </p>
-        <Link
-          href={`/blogs/${id}`}
-          className="inline-flex items-center py-2 font-semibold text-center"
-        >
-          Read more{" "}
-          <Image src={assets.arrow} className="ml-2" alt="" width={12} />
-        </Link>
-      </div>
+    <div className="col-lg-4 col-md-6">
+      <a
+        href="https://www.peramuzesi.org.tr/pera-ogrenme/atolye/degisken-ve-oznel-sans-faktoru-ile-hikaye-yazimi/5854"
+        target="_self"
+        className="no-link"
+      >
+        <div className="card mb-4 border-0">
+          <img
+            className="bd-placeholder-img card-img-top"
+            width="100%"
+            src="/home/images/sans-faktoru-hp-copy.jpg"
+            alt="<Değişken ve Öznel <br> Şans Faktörü ile Hikâye Yazımı <br> 1 Kasım 2024 / 19.00"
+          />
+          <div className="card-body">
+            <h3 className="card-title">
+              <span>{title}</span>
+              <br />
+              <span>1 Kasım 2024 / 19.00</span>
+            </h3>
+
+            <p className="card-text">{description}</p>
+            <div className="d-flex justify-content-between align-items-center">
+              <small className="text-muted" />
+              <div className="btn-group">
+                <button
+                  type="button"
+                  className="btn btn-sm btn-outline-secondary d-sm-block d-md-none"
+                >
+                  Göster
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
   );
 };

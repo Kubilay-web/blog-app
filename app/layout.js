@@ -1,5 +1,12 @@
-import localFont from "next/font/local";
-import "./globals.css";
+import "../app/globals.css";
+import "../public/home/css/bootstrap.min.css";
+import "../public/home/css/font-awesome.min.css";
+import "../public/home/css/Hamburgers.css";
+import "../public/home/css/owl.carousel.css";
+import "../public/home/css/owl.theme.default.css";
+import "../public/home/css/plyr.css";
+import "../public/home/css/tema.css";
+import Script from "next/script";
 
 export const metadata = {
   title: "Create Next App",
@@ -8,7 +15,27 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="tr">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato:400,700,900"
+          rel="stylesheet"
+        />
+
+        <Script src="/home/js/jquery-3.2.1.min.js"></Script>
+        <Script src="/home/js/popper.min.js"></Script>
+        <Script src="/home/js/bootstrap.min.js"></Script>
+        <Script src="/home/js/ga.js"></Script>
+        <Script src="/home/js/owl.carousel.js"></Script>
+      </head>
       <body>{children}</body>
     </html>
   );
